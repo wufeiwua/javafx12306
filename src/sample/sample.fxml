@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <content>
+      <HBox prefHeight="900" prefWidth="1420">
+         <children>
+            <VBox>
+               <children>
+                  <HBox fx:id="top">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                       <Label text="出发地">
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </Label>
+                       <ComboBox fx:id="from" editable="true" prefWidth="150.0">
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </ComboBox>
+                       <Label text="到达地" >
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </Label>
+                       <ComboBox fx:id="to" editable="true" prefWidth="150.0">
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </ComboBox>
+                       <Label text="出发日期" >
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </Label>
+                       <DatePicker fx:id="date" editable="false" prefWidth="150.0">
+                         <HBox.margin>
+                           <Insets left="10.0" />
+                         </HBox.margin>
+                       </DatePicker>
+                        <Button fx:id="search" mnemonicParsing="false" onAction="#handleButton" prefWidth="50.0" text="搜索">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="800" prefWidth="1420">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TableView fx:id="tableView" prefWidth="1420">
+                          <columns>
+                            <TableColumn prefWidth="100" text="车次" />
+                            <TableColumn prefWidth="100" text="出发站" />
+                            <TableColumn prefWidth="100" text="到达站" />
+                            <TableColumn prefWidth="100" text="出发时间" />
+                            <TableColumn prefWidth="100" text="到达时间" />
+                            <TableColumn prefWidth="100" text="历时" />
+                            <TableColumn prefWidth="100" text="高级软卧" />
+                            <TableColumn prefWidth="100" text="软卧" />
+                            <TableColumn prefWidth="100" text="无座" />
+                            <TableColumn prefWidth="100" text="硬卧" />
+                            <TableColumn prefWidth="100" text="硬座" />
+                            <TableColumn prefWidth="100" text="二等座" />
+                            <TableColumn prefWidth="100" text="一等座" />
+                            <TableColumn prefWidth="100" text="商务座" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>
