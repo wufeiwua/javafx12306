@@ -1,4 +1,4 @@
-package sample;
+package org.javafx12306;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
@@ -15,10 +15,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.util.StringConverter;
-import sample.entity.Station;
-import sample.entity.Ticket;
-import sample.gui.ComboBoxListener;
-import sample.util.APIUtil;
+import org.javafx12306.entity.Station;
+import org.javafx12306.entity.Ticket;
+import org.javafx12306.gui.ComboBoxListener;
+import org.javafx12306.util.APIUtil;
 
 import java.net.URL;
 import java.util.List;

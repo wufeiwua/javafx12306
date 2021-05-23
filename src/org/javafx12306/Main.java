@@ -1,4 +1,4 @@
-package sample;
+package org.javafx12306;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("javafx12306.fxml"));
         primaryStage.setTitle("12306查票系统");
         Scene scene = new Scene(root, 1450, 1000);
         primaryStage.setScene(scene);

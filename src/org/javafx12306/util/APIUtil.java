@@ -1,4 +1,4 @@
-package sample.util;
+package org.javafx12306.util;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
@@ -9,11 +9,10 @@ import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import sample.entity.Station;
-import sample.entity.Ticket;
+import org.javafx12306.entity.Station;
+import org.javafx12306.entity.Ticket;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class APIUtil {

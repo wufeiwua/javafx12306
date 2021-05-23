@@ -1,4 +1,4 @@
-package sample.entity;
+package org.javafx12306.entity;
 
 /**
  * 余票信息
